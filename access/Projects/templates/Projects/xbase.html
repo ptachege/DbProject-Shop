@@ -1,0 +1,65 @@
+
+{% load static %}
+<header class="rn-header header-default header-not-transparent header-sticky">
+    <div class="container position-relative">
+        <div class="row align-items-center row--0">
+            <div class="col-lg-3 col-md-6 col-4">
+                <div class="logo">
+                    <a href="/" class=" ">
+                        <div class="thumbnail">
+
+                            <img class="logo-light" style="border-radius: 50%;"  src="{% static 'assets/myimages/Access-icon.png' %}"
+                                alt="Corporate Logos">
+                            <img class="logo-dark" style="border-radius: 50%;" src="{% static 'assets/myimages/Access-icon.png' %}"
+                                alt="Corporate Logo">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-6 col-8 position-static">
+                <div class="header-right">
+                    <nav class="mainmenu-nav d-none d-lg-block">
+                        <ul class="mainmenu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="{% url 'Projects:contact' %}">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-btn"><a class="btn-default btn-small round" target="_blank"
+                         href="//api.whatsapp.com/send?phone=254701628981&text=Hello, I am interested in your ms access database project posted on PnJKenya website."   
+                        >BUY
+                            NOW</a>
+                    </div>
+                    <!-- Start Mobile-Menu-Bar -->
+                    <div class="mobile-menu-bar ml--5 d-block d-lg-none">
+                        <div class="hamberger">
+                            <button class="hamberger-button">
+                                <i class="feather-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="popup-mobile-menu">
+    <div class="inner">
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo-light" src="{% static 'assets/myimages/Access-icon.png' %}" alt="Corporate Logo">
+                    <img class="logo-dark" src="{% static 'assets/myimages/Access-icon.png' %}" alt="Corporate Logo">
+                </a>
+            </div>
+            <div class="close-menu">
+                <button class="close-button">
+                    <i class="feather-x"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="mainmenu">
+            <li><a href="#">About us</a></li>
+            <li><a href="{% url 'Projects:contact' %}">Contact</a></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kcse Ms Access Projects</title>
+
+    {% load static %}
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}">
+
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/animation.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/feature.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/magnify.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/lightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <style>
+          .ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    right: -3px
+}
+.ribbon {
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Montserrat Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: .05em;
+    line-height: 15px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .4);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    right: -11px;
+    top: 10px;
+    width: 100px;
+    height: 28px;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    background-color: #dedede;
+    background-image: -webkit-linear-gradient(top, #ffffff 45%, #dedede 100%);
+    background-image: -o-linear-gradient(top, #ffffff 45%, #dedede 100%);
+    background-image: linear-gradient(to bottom, #ffffff 45%, #dedede 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdedede', GradientType=0)
+}
+
+.ribbon:before,
+.ribbon:after {
+    content: "";
+    border-top: 3px solid #9e9e9e;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    bottom: -3px
+}
+
+.ribbon:before {
+    left: 0
+}
+
+.ribbon:after {
+    right: 0
+}
+    
+.ribbon.green {
+    background-color: #2da285;
+    background-image: -webkit-linear-gradient(top, #7D47CA 95%, #F14B6C 100%);
+    background-image: -o-linear-gradient(top, #7D47CA 95%, #F14B6C 100%);
+    background-image: linear-gradient(to bottom, #7D47CA 25%, #F14B6C 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#7D47CA', endColorstr='#F14B6C', GradientType=0)
+}
+
+.ribbon.green:before,
+.ribbon.green:after {
+    border-top: 3px solid #113e33
+}
+
+.ribbon.red {
+    background-color: #bc1a3a;
+    background-image: -webkit-linear-gradient(top, #a61733 45%, #bc1a3a 100%);
+    background-image: -o-linear-gradient(top, #a61733 45%, #bc1a3a 100%);
+    background-image: linear-gradient(to bottom, #a61733 45%, #bc1a3a 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffa61733', endColorstr='#ffbc1a3a', GradientType=0)
+}
+
+.ribbon.red:before,
+.ribbon.red:after {
+    border-top: 3px solid #8f142c
+}
+
+
+.ribbon.blue {
+    background-color: #1a8bbc;
+    background-image: -webkit-linear-gradient(top, #177aa6 45%, #1a8bbc 100%);
+    background-image: -o-linear-gradient(top, #177aa6 45%, #1a8bbc 100%);
+    background-image: linear-gradient(to bottom, #177aa6 45%, #1a8bbc 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#177aa6', endColorstr='#ff1a8bbc', GradientType=0)
+}
+
+.ribbon.blue:before,
+.ribbon.blue:after {
+    border-top: 3px solid #115979
+}
+
+    </style>
+</head>
+
+
+<body class="active-dark-mode">
+    <main class="page-wrapper">
+       {% include 'Projects/xbase.html' %}
+
+        <div>
+            <div class="rn-gradient-circle"></div>
+            <div class="rn-gradient-circle theme-pink"></div>
+        </div>
+       
+
+        <!-- here is where the body should be -->
+
+
+
+        <div class="demo-slider-area slider-area bg-transparent slider-style-1 pb--100 pt--70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="inner text-center">
+                            <h1 class="title display-two">
+                                KNEC Kcse<br><span class="theme-gradient">PP3</span> @ <span class="theme-gradient">Computer
+                                    Studies</span><br> <span>Database & Documentation.</span>
+                            </h1>
+                            <p class="description">We help computer students understand kcse projects by branding them with
+                                pre-made databases
+                                for learning purposes.</p>
+                            <div class="button-group">
+                                <a class="btn-default btn-large round btn-icon smoth-animation" href="#currentyear">View
+                                    Projects <i class="feather-arrow-down"></i>
+                                </a>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Seperator Area  -->
+        <div class="rbt-separator-mid">
+            <div class="container">
+                <hr class="rbt-separator m-0">
+            </div>
+        </div>
+
+        <!-- Start current year project  -->
+        <div class="rwt-split-area rn-section-gap" id="currentyear">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-lg-12 mb--40">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                            <h4 class="subtitle"><span class="theme-gradient">Trending</span></h4>
+                            <h2 class="title w-600 mb--20">NEKTA MANAGEMENT SYSTEM</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="rn-splite-style">
+                    <div class="split-wrapper">
+                        <div class="row g-0 radius-10 align-items-center">
+                            <div class="col-lg-12 col-xl-5 col-12">
+                                <div class="thumbnail image-left-content">
+                                    <img src="{% static 'assets/myimages/combined.png' %}" alt="split Images">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-7 col-12">
+                                <div class="split-inner">
+                                    <h4 class="title" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">OVERVIEW</h4>
+                                    <p class="description" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">
+                                       This year, students are required to create a database system which should
+                                       manage <i>NEKTA</i> company and it's day to day operations. The database should be able to:</p>
+                                    <ul class="split-list" data-sal="slide-up" data-sal-duration="400" data-sal-delay="350">
+                                        <li>- Register Farmers</li>
+                                        <li>- Register Trainees</li>
+                                        <li>- Track sales, Transports and hive packages</li>
+                                        <li>- Track all payments.</li>
+                                        <li>- Compute Income from sales and training services</li>
+                                        <li>
+                                           --  We have created the Nekta Database system specifically for you, to sharpen your skills in ms access and to 
+                                            shade some light as you do your project. The database is well created and maintaned, the tables are simple and understandle.
+                                            Grab your a today. --
+                                        </li>
+                                    </ul>
+                                    <div class="view-more-button mt--35" data-sal="slide-up" data-sal-duration="400"
+                                        data-sal-delay="400">
+                                        <center><a class="btn-default" target="_blank" href="//api.whatsapp.com/send?phone=254701628981&text=Hello, I am interested in your ms access database project posted on PnJKenya website."> <i class="feather-message-circle"></i> Buy Now</a></center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End current year project  -->
+
+
+        <!-- previous years projects -->
+
+        <div class="rn-blog-area rn-section-gap">
+            <div class="container">
+                <div class="row mt_dec--30">
+                    <div class="col-lg-12">
+                        <div class="row row--15">
+                            <div class="col-lg-12">
+                                <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                                    <h4 class="subtitle "><span class="theme-gradient">Previous Years Projects.</span></h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700">
+                                <div class="rn-card box-card-style-default">
+                                    <div class="ribbon-wrapper">
+                                        <div class="ribbon green">Free</div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="thumbnail"><a class="image" target="_blank" href="https://media.istockphoto.com/photos/powerful-blue-day-cab-big-rig-semi-truck-with-dry-van-semi-trailer-picture-id1313941155?b=1&k=20&m=1313941155&s=170667a&w=0&h=uUCStY4gi1dAxb4W33KCBXnri52wVP7A72r2_mNnlsg="><img class="w-100"
+                                                    src="https://media.istockphoto.com/photos/powerful-blue-day-cab-big-rig-semi-truck-with-dry-van-semi-trailer-picture-id1313941155?b=1&k=20&m=1313941155&s=170667a&w=0&h=uUCStY4gi1dAxb4W33KCBXnri52wVP7A72r2_mNnlsg=" alt="Blog Image"></a>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="rn-meta-list">
+                                                <li><a href="#">Kcse pp3</a></li>
+                                                <li class="separator">: :</li>
+                                                <li>2021</li>
+                                            </ul>
+                                            <h4 class="title"><a href="{% static 'assets/myimages/movers3.accdb' %}">Movers Transport Management System</a></h4>
+                                           
+                                        </div>
+                                        <div class="text-center mb-4">
+                                            <a class="btn-default round" href="{% static 'assets/myimages/movers3.accdb' %}">
+                                                <span>
+                                                    Download
+                                                    <i class="icon feather-download"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700"
+                                data-sal-delay="100">
+                                <div class="rn-card box-card-style-default">
+                                    <div class="ribbon-wrapper">
+                                        <div class="ribbon green">Free</div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="thumbnail"><a class="image" target="_blank" href="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60"><img class="w-100"
+                                                    src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="Blog Image"></a>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="rn-meta-list">
+                                                <li><a href="#">Kcse pp3</a></li>
+                                                <li class="separator">: :</li>
+                                                <li>2020</li>
+                                            </ul>
+                                            <h4 class="title"><a href="{% static 'assets/myimages/Fedha.accdb' %}">Fedha Youth Group Management System.</a></h4>
+                                        </div>
+
+                                        <div class="text-center mb-4">
+                                            <a class="btn-default round" href="{% static 'assets/myimages/Fedha.accdb' %}">
+                                                <span>
+                                                    Download <i class="icon feather-download"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700"
+                                data-sal-delay="200">
+                                <div class="rn-card box-card-style-default">
+                                    <div class="ribbon-wrapper">
+                                        <div class="ribbon green">Free</div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="thumbnail">
+                                            <a class="image"  href="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" target="_blank">
+                                                <img class="w-100" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Blog Image">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="rn-meta-list">
+                                                <li><a href="#">Computer pp3</a></li>
+                                                <li class="separator">: :</li>
+                                                <li>2018</li>
+                                            </ul>
+                                            <h4 class="title"><a href="#">Mwanzo Baraka Management System</a></h4>
+                                        </div>
+
+                                        <div class="text-center mb-4">
+                                            <a class="btn-default round" href="#">
+                                                <span>
+                                                    Download <i class="icon feather-download"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-12 text-center">
+                        <div class="rwt-load-more text-center mt--60">
+                            <a class="btn-default" href="#clients">View Clients
+                                <i class="feather-users"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- our team -->
+
+        <div class="main-content">        
+
+            <!-- Start Team-Style-Default Style-Two Area  -->
+            <div class="rwt-team-area rn-section-gap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                                <h4 class="subtitle "><span class="theme-gradient">Our Team.</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--15">
+                        <div class="col-lg-4 col-md-6 col-12 mt--10" data-sal="slide-up" data-sal-duration="700">
+                            <div class="rn-team team-style-default style-two">
+                                <div class="inner">
+                                    <div class="thumbnail"><img src="https://res.cloudinary.com/pnjkenya/image/upload/v1651570687/josh2_jiiiho.jpg" alt="Corporate Template"></div>
+                                    <div class="content">
+                                        <h2 class="title">Kaswii Joshua</h2>
+                                        <h6 class="subtitle theme-gradient">Market Analyst</h6>
+                                        <span class="team-form">
+                                            <i class="feather-map-pin"></i>
+                                            <span class="location">Westlands, Nairobi</span>
+                                        </span>
+                                        <p class="description">Yes, I am a product designer. I have a passion for
+                                            product design.</p>
+                                        <ul class="social-icon social-default icon-naked mt--20">
+                                            <li><a href="https://web.facebook.com/Computer-pp3-104173985620747/" target="_blank">
+                                                    <i class="feather-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li><a href="https://web.facebook.com/Computer-pp3-104173985620747" target="_blank">
+                                                    <i class="feather-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li><a href="https://web.facebook.com/Computer-pp3-104173985620747/" target="_blank">
+                                                    <i class="feather-instagram"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6 col-12 mt--10" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="100">
+                            <div class="rn-team team-style-default style-two">
+                                <div class="inner">
+                                    <div class="thumbnail"><img src="https://res.cloudinary.com/pnjkenya/image/upload/v1651570743/chege_lehsne.jpg" alt="Corporate Template"></div>
+                                    <div class="content">
+                                        <h2 class="title">Peter Chege</h2>
+                                        <h6 class="subtitle theme-gradient">Senior Developer</h6>
+                                        <span class="team-form">
+                                            <i class="feather-map-pin"></i>
+                                            <span class="location">Nairobi, Kenya</span>
+                                        </span>
+                                        <p class="description">Yes, I am a product designer. I have a passion for
+                                        product design. And oooh, i create beautifull Ms Access designs.</p>
+                                    <ul class="social-icon social-default icon-naked mt--20">
+                                        <li><a href="https://web.facebook.com/Computer-pp3-104173985620747/" target="_blank">
+                                                <i class="feather-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://web.facebook.com/Computer-pp3-104173985620747" target="_blank">
+                                                <i class="feather-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://web.facebook.com/Computer-pp3-104173985620747/" target="_blank">
+                                                <i class="feather-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6 col-12 mt--10" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="200">
+                            <div class="rn-team team-style-default style-two">
+                                <div class="inner">
+                                    <div class="thumbnail"><img src="https://res.cloudinary.com/pnjkenya/image/upload/v1632124991/dpqhl5yg55ecpmgwoyd1.jpg" alt="Corporate Template"></div>
+                                    <div class="content">
+                                        <h2 class="title">Sr Janen Sara</h2>
+                                        <h6 class="subtitle theme-gradient">Sr Product Designer</h6>
+                                        <span class="team-form">
+                                            <i class="feather-map-pin"></i>
+                                            <span class="location">CO Miego, AD,USA</span>
+                                        </span>
+                                        <p class="description">Yes, I am a product designer. I have a passion for
+                                            product design.</p>
+                                    <ul class="social-icon social-default icon-naked mt--20">
+                                        <li><a href="https://web.facebook.com/Computer-pp3-104173985620747/" target="_blank">
+                                                <i class="feather-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://web.facebook.com/Computer-pp3-104173985620747" target="_blank">
+                                                <i class="feather-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://web.facebook.com/Computer-pp3-104173985620747/" target="_blank">
+                                                <i class="feather-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Team-Style-Default Style-Two Area  -->         
+        </div>
+        <!-- End Seperator Area  -->
+
+        <!-- Start Main Counter up-3 Area  -->
+        <div class="rwt-counterup-area rn-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">
+                            <h4 class="subtitle "><span class="theme-gradient">Quick Stats</span></h4>
+                            <h2 class="title w-600 mb--20">Just look at our ratings</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="count-box counter-style-2 color-variation text-center">
+                            <div>
+                                <div class="count-number"><span class="counter">5,899</span></div>
+                            </div>
+                            <h5 class="title">Happy Clients.</h5>
+                            <p class="description">Quality Databases for quality students. We have helped More than 5,899 students and counting.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="count-box counter-style-2 color-variation text-center">
+                            <div>
+                                <div class="count-number"><span class="counter">4</span></div>
+                            </div>
+                            <h5 class="title">Free Projects</h5>
+                            <p class="description">
+                                So far, we have Movers Transport system, Fedha youth Group & Mwanzo Baraka which you can download for free.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="count-box counter-style-2 color-variation text-center">
+                            <div>
+                                <div class="count-number"><span class="counter">2</span></div>
+                            </div>
+                            <h5 class="title">Team</h5>
+                            <p class="description">The team is still small me & Joshua but trust me,  we are growing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Counter up-3 Area  -->
+
+     
+        <!-- Start Testimonial Area  -->
+        <div class="main-content">
+            <div class="rwt-testimonial-area rn-section-gap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700"
+                                data-sal-delay="100">
+                                <h4 class="subtitle "><span class="theme-gradient">Client Feedback</span></h4>
+                                <h2 class="title w-600 mb--20">What Clents Say about us.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--15">
+                        <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700">
+                            <div class="rn-box-card card-style-default testimonial-style-one style-two border-gradient">
+                                <div class="inner">
+                                    <div class="thumbnail"><img src="{% static 'assets/myimages/student2.jpg' %}"
+                                            alt="Corporate React Template"></div>
+                                    <div class="content">
+                                        <p class="description">“Kazi yao ni safi sana na legit. Good work you guys, really saved me manze.„</p>
+                                        <h2 class="title">John mwaniki</h2>
+                                        <h6 class="subtitle theme-gradient">Eldoret</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="100">
+                            <div class="rn-box-card card-style-default testimonial-style-one style-two border-gradient">
+                                <div class="inner">
+                                    <div class="thumbnail"><img src="{% static 'assets/myimages/student2.jpg' %}"
+                                            alt="Corporate React Template"></div>
+                                    <div class="content">
+                                        <p class="description">“These guys created a customized database for me. I've learnt a lot about Ms Access through
+                                            them. Your design is clean and elegant.„</p>
+                                        <h2 class="title">Naliaka Maureen</h2>
+                                        <h6 class="subtitle theme-gradient">Meru</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="200">
+                            <div class="rn-box-card card-style-default testimonial-style-one style-two border-gradient">
+                                <div class="inner">
+                                    <div class="thumbnail"><img src="{% static 'assets/myimages/student2.jpg' %}"
+                                            alt="Corporate React Template"></div>
+                                    <div class="content">
+                                        <p class="description">“Sahii nmekua pro wa kutengeza form za Access na queries thanks to you guys. Forever grateful.„</p>
+                                        <h2 class="title">Jemoh Basher</h2>
+                                        <h6 class="subtitle theme-gradient">Nairobi</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <!-- End Testimonial Area  -->
+
+
+        <!-- Start Pricing Style-1  -->
+        <div class="rwt-pricing-area rn-section-gap">
+            <div class="container">
+                <div class="row mb--40 mb_sm--0">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                            <h4 class="subtitle "><span class="theme-gradient">Please Note that these prices are negotiable.</span></h4>
+                            <h2 class="title w-500 mb--20">Our Prices.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row--30">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="rn-pricing">
+                            <div class="pricing-table-inner">
+                                <div class="pricing-header">
+                                    <h4 class="title">Documentation</h4>
+                                    <div class="pricing">
+                                        <div class="price-wrapper"><span class="currency">KES</span><span class="price">550</span>
+                                        </div><span class="subtitle">  / KES 600</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-body">
+                                    <ul class="list-style--1">
+                                        <li><i class="feather-check" style="color: green;"></i> Ms Word Documentation</li>
+                                        <li><i class="feather-check" style="color: green;"></i> Instruction manual</li>
+                                        <li><i class="feather-x" style="color: red;"></i> Free support</li>
+                                        <li><i class="feather-x" style="color: red;"></i> Database</li>
+                                        <li><i class="feather-x" style="color: red;"></i> Database Support</li>
+                                    </ul>
+                                </div>
+                                <div class="pricing-footer"><a class="btn-default btn-border" href="//api.whatsapp.com/send?phone=254701628981&text=Hello, I am interested in your ms access database project posted on PnJKenya website." target="_blank">Purchase Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="rn-pricing active">
+                            <div class="pricing-table-inner">
+                                <div class="pricing-header">
+                                    <h4 class="title">Database</h4>
+                                    <div class="pricing">
+                                        <div class="price-wrapper"><span class="currency">KES</span><span class="price">1,000</span>
+                                        </div><span class="subtitle">/ KES 1100</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-body">
+                                    <ul class="list-style--1">
+                                        <li><i class="feather-check" style="color: green;"></i> Ms Access Database</li>
+                                        <li><i class="feather-check" style="color: green;"></i> Database Debug</li>
+                                        <li><i class="feather-check" style="color: green;"></i> 24/7 Support</li>
+                                        <li><i class="feather-check" style="color: green;"></i> Instruction manual</li>
+                                        <li><i class="feather-x" style="color: red;"></i> Documentation</li>
+                                    </ul>
+                                </div>
+                                <div class="pricing-footer"><a class="btn-default" href="//api.whatsapp.com/send?phone=254701628981&text=Hello, I am interested in your ms access database project posted on PnJKenya website." target="_blank">Purchase Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="rn-pricing">
+                            <div class="pricing-table-inner">
+                                <div class="pricing-header">
+                                    <h4 class="title">Full Package</h4>
+                                    <div class="pricing">
+                                        <div class="price-wrapper"><span class="currency">KES</span><span class="price">1,400</span>
+                                        </div><span class="subtitle">/ KES 1,500</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-body">
+                                    <ul class="list-style--1">
+                                        <li><i class="feather-check" style="color: green;"></i> Ms Access Database</li>
+                                        <li><i class="feather-check" style="color: green;"></i> Documentation</li>
+                                        <li><i class="feather-check" style="color: green;"></i> Database Debug</li>
+                                        <li><i class="feather-check" style="color: green;"></i> 24/7 Support</li>
+                                        <li><i class="feather-check" style="color: green;"></i> Instruction manual</li>
+                                    </ul>
+                                </div>
+                                <div class="pricing-footer"><a class="btn-default btn-border" href="//api.whatsapp.com/send?phone=254701628981&text=Hello, I am interested in your ms access database project posted on PnJKenya website." target="_blank">Purchase Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pricing Style-1  -->
+
+        <!-- Start Gallery Small Style-3  -->
+        <div class="rwt-gallery-area rn-section-gapBottom my-4" id="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mb--20">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                            <h4 class="subtitle "><span class="theme-gradient">Encounter with some of the clients.</span></h4>
+                            <h2 class="title w-600 mb--20">
+        
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt_dec--30 row--15" id="animated-lightbox3">
+                    <a class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30" href="{% static 'assets/myimages/evidence.jpeg' %}">
+                        <div class="rn-gallery icon-center">
+                            <div class="thumbnail">
+                                <img class="radius-small" src="{% static 'assets/myimages/evidence.jpeg' %}"
+                                    alt="Corporate Image">
+                            </div>
+                            <div class="video-icon">
+                                <div class="btn-default rounded-player sm-size">
+                                    <span>
+                                        <i class="feather-zoom-in"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30" href="{% static 'assets/myimages/evidence2.jpeg' %}">
+                        <div class="rn-gallery icon-center">
+                            <div class="thumbnail">
+                                <img class="radius-small" src="{% static 'assets/myimages/evidence2.jpeg' %}"
+                                    alt="Corporate Image">
+                            </div>
+                            <div class="video-icon">
+                                <div class="btn-default rounded-player sm-size">
+                                    <span>
+                                        <i class="feather-zoom-in"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30" href="{% static 'assets/myimages/evidence3.jpeg' %}">
+                        <div class="rn-gallery icon-center">
+                            <div class="thumbnail">
+                                <img class="radius-small" src="{% static 'assets/myimages/evidence3.jpeg' %}"
+                                    alt="Corporate Image">
+                            </div>
+                            <div class="video-icon">
+                                <div class="btn-default rounded-player sm-size">
+                                    <span>
+                                        <i class="feather-zoom-in"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30" href="{% static 'assets/myimages/evidence4.jpeg' %}">
+                        <div class="rn-gallery icon-center">
+                            <div class="thumbnail">
+                                <img class="radius-small" src="{% static 'assets/myimages/evidence4.jpeg' %}"
+                                    alt="Corporate Image">
+                            </div>
+                            <div class="video-icon">
+                                <div class="btn-default rounded-player sm-size">
+                                    <span>
+                                        <i class="feather-zoom-in"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Fnd Gallery Small Style-3  -->
+
+
+
+
+        {% include 'Projects/footer.html' %}
+
+
+        <!-- here it ends -->
+
+    </main>
+    <div class="rn-back-top">
+        <i class="feather-arrow-up"></i>
+    </div>
+    <!-- JS ============================================ -->
+    <script src="{% static 'assets/js/vendor/modernizr.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/waypoint.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/feather.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/sal.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/masonry.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/imageloaded.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/magnify.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/easypie.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/text-type.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.style.swicher.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/js.cookie.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-one-page-nav.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>
